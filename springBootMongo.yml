@@ -23,7 +23,7 @@ spec:
         app: springboot
     spec:
       containers:
-      - image: APPIMG
+      - image: 232673743366.dkr.ecr.us-west-2.amazonaws.com/java-project:latest
         name: springboot
         ports:
         - containerPort: 8080  
