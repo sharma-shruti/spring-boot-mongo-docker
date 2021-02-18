@@ -10,7 +10,7 @@ services:
     - MONGO_DB_USERNAME=devdb
     - MONGO_DB_PASSWORD=devdb123
     ports:
-      - 8000:8080
+      - 8002:8080
     working_dir: /opt/app
     depends_on:
       - mongo
