@@ -34,13 +34,12 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: springapp-configmap
-              key: springapp 
+              key: username 
         - name: MONGO_INITDB_ROOT_PASSWORD
           valueFrom:
             configMapKeyRef:
               name: springapp-configmap
-             # key: password 
-              key: mongodb@123      
+              key: password       
 ---
 # Node Port Service For SpringApp
 apiVersion: v1
@@ -77,13 +76,12 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: springapp-configmap
-              key: springapp 
+              key: username 
         - name: MONGO_INITDB_ROOT_PASSWORD
           valueFrom:
             configMapKeyRef:
               name: springapp-configmap
-              #key: password 
-              key: mongodb@123
+              key: password 
         ports:
         - containerPort: 27017
         volumeMounts:
